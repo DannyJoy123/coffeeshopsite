@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+body{
+	background: url(images/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+.header{
+	background-attachment: fixed;
+    width: 100%;
+    height: 30px;
+    margin: 0px 0px;
+    float: left;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.text{
+	background-color: saddlebrown;
+	border-radius: 5px;
+	width: 275px;
+	height: 30px;
+	display: inline-block;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 2px 2px 12px  rgba(0,0,0,0,2);
+	margin-right: -600px;
+}
+.text input [type-search]{
+	border: none;
+	background-color: transparent;
+	color: #000000;
+	text-align: center;
+	outline: none;
+}
+.text button{
+	height: 30px;
+	width: 80px;
+	border: none;
+	color: black;
+	font-family: calibri;
+	font-weight: bold;
+	outline: none;
+	border-radius: 0px 20px 20px 0px;
+	border-left: 1px solid white;
+}
+.text button:hover{
+	background: #561b04;
+	color: white;
+}
+#menu{
+	padding: 25px 0 25px 0 ;
+	font-style: italic;
+	font-size: 20px;
+	color: brown ;
+	text-shadow: -1px 0 sandybrown;
+}
+#section{
+	padding: 25px 0 25px 0;
+	text-align: center;
+	font-size: 2rem;
+	font-family: vervana;
+}
+#menu_row{
+	display: flex;
+	padding: 0 100px 0 100px;
+}
+#menu_col{
+	box-shadow: 4px 4px 4px brown;
+	border: 1px solid #bbb;
+	background-color: rgba(53, 26, 11, 0.4);
+	margin: 5px;
+	flex: 1;
+}
+#menu_col h2{
+	background-color: saddlebrown;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	font-family: cursive;
+}
+#image img{
+	width: 30%;
+	height: 30%;
+	border-radius: 50%;
+	padding: 5px;
+	object-fit: cover;
+	transition: .3s;
+}
+#image img:hover{
+	transform: rotate(360deg);
+}
+.style h3, h4{
+	font-size: 15px;
+	color: white;
+	text-shadow: -3px 0 brown;
+	font-family: cursive;
+	font-style: italic;
+}
+.style h3:hover{
+	background: #561b04;
+	color: white;
+}
+.style h4:hover{
+	background: #561b04;
+	color: white;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 5px;
+}
+
+@media screen and (max-width : 786px){
+	#mobile_menu{
+		display: block;
+	}
+	html{
+		font-size: 95%;
+	}
+	#menu_row{
+		flex-wrap: wrap;
+		padding: 0 10px 0 10px;
+	}
+}
+@media screen and(max-width : 360px){
+	html{
+		font-size: 70%;
+	}
+}
